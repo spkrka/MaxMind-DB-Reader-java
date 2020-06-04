@@ -16,7 +16,7 @@ public class PointerTest {
     @Test
     public void testWithPointers() throws IOException {
         File file = ReaderTest.getFile("maps-with-pointers.raw");
-        BufferHolder ptf = new BufferHolder(file, FileMode.MEMORY);
+        BufferHolder ptf = new BufferHolder(file, FileMode.MEMORY, true);
         Decoder decoder = new Decoder(NoCache.getInstance(), ptf.get(), 0);
 
         ObjectMapper om = new ObjectMapper();

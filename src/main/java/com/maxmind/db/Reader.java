@@ -50,7 +50,11 @@ public final class Reader implements Closeable {
      * @throws IOException if there is an error opening or reading from the file.
      */
     public Reader(File database) throws IOException {
-        this(database, NoCache.getInstance());
+        this(database, NoCache.getInstance(), true);
+    }
+
+    public Reader(File database, boolean sync) throws IOException {
+        this(database, NoCache.getInstance(), sync);
     }
 
     /**
@@ -63,7 +67,11 @@ public final class Reader implements Closeable {
      * @throws IOException if there is an error opening or reading from the file.
      */
     public Reader(File database, NodeCache cache) throws IOException {
-        this(database, FileMode.MEMORY_MAPPED, cache);
+        this(database, FileMode.MEMORY_MAPPED, cache, true);
+    }
+
+    public Reader(File database, NodeCache cache, boolean sync) throws IOException {
+        this(database, FileMode.MEMORY_MAPPED, cache, sync);
     }
 
     /**
@@ -74,7 +82,7 @@ public final class Reader implements Closeable {
      * @throws IOException if there is an error reading from the Stream.
      */
     public Reader(InputStream source) throws IOException {
-        this(source, NoCache.getInstance());
+        this(source, NoCache.getInstance(), true);
     }
 
     /**
@@ -83,10 +91,11 @@ public final class Reader implements Closeable {
      *
      * @param source the InputStream that contains the MaxMind DB file.
      * @param cache  backing cache instance
+     * @param sync
      * @throws IOException if there is an error reading from the Stream.
      */
-    public Reader(InputStream source, NodeCache cache) throws IOException {
-        this(new BufferHolder(source), "<InputStream>", cache);
+    public Reader(InputStream source, NodeCache cache, boolean sync) throws IOException {
+        this(new BufferHolder(source, sync), "<InputStream>", cache);
     }
 
     /**
@@ -99,7 +108,7 @@ public final class Reader implements Closeable {
      * @throws IOException if there is an error opening or reading from the file.
      */
     public Reader(File database, FileMode fileMode) throws IOException {
-        this(database, fileMode, NoCache.getInstance());
+        this(database, fileMode, NoCache.getInstance(), true);
     }
 
     /**
@@ -110,10 +119,11 @@ public final class Reader implements Closeable {
      * @param database the MaxMind DB file to use.
      * @param fileMode the mode to open the file with.
      * @param cache    backing cache instance
+     * @param sync
      * @throws IOException if there is an error opening or reading from the file.
      */
-    public Reader(File database, FileMode fileMode, NodeCache cache) throws IOException {
-        this(new BufferHolder(database, fileMode), database.getName(), cache);
+    public Reader(File database, FileMode fileMode, NodeCache cache, boolean sync) throws IOException {
+        this(new BufferHolder(database, fileMode, sync), database.getName(), cache);
     }
 
     private Reader(BufferHolder bufferHolder, String name, NodeCache cache) throws IOException {

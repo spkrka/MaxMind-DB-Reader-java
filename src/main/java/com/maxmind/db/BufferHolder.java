@@ -14,8 +14,10 @@ import com.maxmind.db.Reader.FileMode;
 final class BufferHolder {
     // DO NOT PASS OUTSIDE THIS CLASS. Doing so will remove thread safety.
     private final ByteBuffer buffer;
+    private final boolean sync;
 
-    BufferHolder(File database, FileMode mode) throws IOException {
+    BufferHolder(File database, FileMode mode, boolean sync) throws IOException {
+        this.sync = sync;
         try (
                 final RandomAccessFile file = new RandomAccessFile(database, "r");
                 final FileChannel channel = file.getChannel()
@@ -40,7 +42,8 @@ final class BufferHolder {
      * @throws IOException          if unable to read from your source.
      * @throws NullPointerException if you provide a NULL InputStream
      */
-    BufferHolder(InputStream stream) throws IOException {
+    BufferHolder(InputStream stream, boolean sync) throws IOException {
+        this.sync = sync;
         if (null == stream) {
             throw new NullPointerException("Unable to use a NULL InputStream");
         }
@@ -57,7 +60,13 @@ final class BufferHolder {
      * Returns a duplicate of the underlying ByteBuffer. The returned ByteBuffer
      * should not be shared between threads.
      */
-    synchronized ByteBuffer get() {
-        return this.buffer.duplicate();
+    ByteBuffer get() {
+        if (sync) {
+            synchronized (this) {
+                return this.buffer.duplicate();
+            }
+        } else {
+            return this.buffer.duplicate();
+        }
     }
 }

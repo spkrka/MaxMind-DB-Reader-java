@@ -1,0 +1,777 @@
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_01
+
+# Run progress: 0.00% complete, ETA 00:03:00
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.096 ops/us
+# Warmup Iteration   2: 0.109 ops/us
+Iteration   1: 0.112 ops/us
+Iteration   2: 0.113 ops/us
+Iteration   3: 0.111 ops/us
+Iteration   4: 0.112 ops/us
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_01":
+  0.112 ±(99.9%) 0.006 ops/us [Average]
+  (min, avg, max) = (0.111, 0.112, 0.113), stdev = 0.001
+  CI (99.9%): [0.107, 0.118] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_02
+
+# Run progress: 6.67% complete, ETA 00:02:55
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.178 ops/us
+# Warmup Iteration   2: 0.221 ops/us
+Iteration   1: 0.228 ops/us
+Iteration   2: 0.227 ops/us
+Iteration   3: 0.228 ops/us
+Iteration   4: 0.225 ops/us
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_02":
+  0.227 ±(99.9%) 0.010 ops/us [Average]
+  (min, avg, max) = (0.225, 0.227, 0.228), stdev = 0.001
+  CI (99.9%): [0.218, 0.237] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_04
+
+# Run progress: 13.33% complete, ETA 00:02:42
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.346 ops/us
+# Warmup Iteration   2: 0.451 ops/us
+Iteration   1: 0.452 ops/us
+Iteration   2: 0.452 ops/us
+Iteration   3: 0.452 ops/us
+Iteration   4: 0.453 ops/us
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_04":
+  0.453 ±(99.9%) 0.004 ops/us [Average]
+  (min, avg, max) = (0.452, 0.453, 0.453), stdev = 0.001
+  CI (99.9%): [0.449, 0.456] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_32
+
+# Run progress: 20.00% complete, ETA 00:02:30
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.907 ops/us
+# Warmup Iteration   2: 1.466 ops/us
+Iteration   1: 1.459 ops/us
+Iteration   2: 1.462 ops/us
+Iteration   3: 1.459 ops/us
+Iteration   4: 1.461 ops/us
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_32":
+  1.460 ±(99.9%) 0.010 ops/us [Average]
+  (min, avg, max) = (1.459, 1.460, 1.462), stdev = 0.002
+  CI (99.9%): [1.450, 1.471] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_64
+
+# Run progress: 26.67% complete, ETA 00:02:17
+# Fork: 1 of 1
+# Warmup Iteration   1: 0.725 ops/us
+# Warmup Iteration   2: 1.421 ops/us
+Iteration   1: 1.449 ops/us
+Iteration   2: 1.427 ops/us
+Iteration   3: 1.403 ops/us
+Iteration   4: 1.426 ops/us
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_64":
+  1.426 ±(99.9%) 0.122 ops/us [Average]
+  (min, avg, max) = (1.403, 1.426, 1.449), stdev = 0.019
+  CI (99.9%): [1.304, 1.548] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_01
+
+# Run progress: 33.33% complete, ETA 00:02:05
+# Fork: 1 of 1
+# Warmup Iteration   1: 10.332 us/op
+# Warmup Iteration   2: 9.111 us/op
+Iteration   1: 8.789 us/op
+Iteration   2: 8.761 us/op
+Iteration   3: 8.898 us/op
+Iteration   4: 8.796 us/op
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_01":
+  8.811 ±(99.9%) 0.387 us/op [Average]
+  (min, avg, max) = (8.761, 8.811, 8.898), stdev = 0.060
+  CI (99.9%): [8.424, 9.197] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_02
+
+# Run progress: 40.00% complete, ETA 00:01:52
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.072 us/op
+# Warmup Iteration   2: 8.946 us/op
+Iteration   1: 8.705 us/op
+Iteration   2: 8.670 us/op
+Iteration   3: 8.740 us/op
+Iteration   4: 8.707 us/op
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_02":
+  8.706 ±(99.9%) 0.186 us/op [Average]
+  (min, avg, max) = (8.670, 8.706, 8.740), stdev = 0.029
+  CI (99.9%): [8.520, 8.891] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_04
+
+# Run progress: 46.67% complete, ETA 00:01:40
+# Fork: 1 of 1
+# Warmup Iteration   1: 11.181 ±(99.9%) 0.114 us/op
+# Warmup Iteration   2: 8.698 ±(99.9%) 0.061 us/op
+Iteration   1: 8.684 ±(99.9%) 0.047 us/op
+Iteration   2: 8.667 ±(99.9%) 0.047 us/op
+Iteration   3: 8.654 ±(99.9%) 0.268 us/op
+Iteration   4: 8.704 ±(99.9%) 0.295 us/op
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_04":
+  8.677 ±(99.9%) 0.140 us/op [Average]
+  (min, avg, max) = (8.654, 8.677, 8.704), stdev = 0.022
+  CI (99.9%): [8.538, 8.817] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_32
+
+# Run progress: 53.33% complete, ETA 00:01:27
+# Fork: 1 of 1
+# Warmup Iteration   1: 46.945 ±(99.9%) 0.372 us/op
+# Warmup Iteration   2: 22.320 ±(99.9%) 0.074 us/op
+Iteration   1: 23.141 ±(99.9%) 0.097 us/op
+Iteration   2: 23.347 ±(99.9%) 0.161 us/op
+Iteration   3: 23.059 ±(99.9%) 0.113 us/op
+Iteration   4: 22.903 ±(99.9%) 0.103 us/op
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_32":
+  23.113 ±(99.9%) 1.194 us/op [Average]
+  (min, avg, max) = (22.903, 23.113, 23.347), stdev = 0.185
+  CI (99.9%): [21.918, 24.307] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_64
+
+# Run progress: 60.00% complete, ETA 00:01:15
+# Fork: 1 of 1
+# Warmup Iteration   1: 42.110 ±(99.9%) 0.210 us/op
+# Warmup Iteration   2: 22.119 ±(99.9%) 0.060 us/op
+Iteration   1: 22.021 ±(99.9%) 0.071 us/op
+Iteration   2: 22.410 ±(99.9%) 0.080 us/op
+Iteration   3: 22.397 ±(99.9%) 0.064 us/op
+Iteration   4: 22.422 ±(99.9%) 0.115 us/op
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_64":
+  22.312 ±(99.9%) 1.257 us/op [Average]
+  (min, avg, max) = (22.021, 22.312, 22.422), stdev = 0.195
+  CI (99.9%): [21.055, 23.570] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_01
+
+# Run progress: 66.67% complete, ETA 00:01:02
+# Fork: 1 of 1
+# Warmup Iteration   1: 10.852 ±(99.9%) 0.504 us/op
+# Warmup Iteration   2: 9.167 ±(99.9%) 0.259 us/op
+Iteration   1: 8.881 ±(99.9%) 0.156 us/op
+                 measureThreads_01·p0.00:   7.536 us/op
+                 measureThreads_01·p0.50:   8.576 us/op
+                 measureThreads_01·p0.90:   9.264 us/op
+                 measureThreads_01·p0.95:   9.648 us/op
+                 measureThreads_01·p0.99:   14.170 us/op
+                 measureThreads_01·p0.999:  27.006 us/op
+                 measureThreads_01·p0.9999: 117.697 us/op
+                 measureThreads_01·p1.00:   1597.440 us/op
+
+Iteration   2: 8.895 ±(99.9%) 0.083 us/op
+                 measureThreads_01·p0.00:   7.528 us/op
+                 measureThreads_01·p0.50:   8.624 us/op
+                 measureThreads_01·p0.90:   9.344 us/op
+                 measureThreads_01·p0.95:   9.968 us/op
+                 measureThreads_01·p0.99:   14.224 us/op
+                 measureThreads_01·p0.999:  28.538 us/op
+                 measureThreads_01·p0.9999: 70.026 us/op
+                 measureThreads_01·p1.00:   1361.920 us/op
+
+Iteration   3: 8.942 ±(99.9%) 0.194 us/op
+                 measureThreads_01·p0.00:   7.536 us/op
+                 measureThreads_01·p0.50:   8.592 us/op
+                 measureThreads_01·p0.90:   9.296 us/op
+                 measureThreads_01·p0.95:   9.696 us/op
+                 measureThreads_01·p0.99:   13.968 us/op
+                 measureThreads_01·p0.999:  27.269 us/op
+                 measureThreads_01·p0.9999: 581.632 us/op
+                 measureThreads_01·p1.00:   1544.192 us/op
+
+Iteration   4: 8.834 ±(99.9%) 0.092 us/op
+                 measureThreads_01·p0.00:   7.552 us/op
+                 measureThreads_01·p0.50:   8.592 us/op
+                 measureThreads_01·p0.90:   9.280 us/op
+                 measureThreads_01·p0.95:   9.696 us/op
+                 measureThreads_01·p0.99:   13.792 us/op
+                 measureThreads_01·p0.999:  26.448 us/op
+                 measureThreads_01·p0.9999: 48.982 us/op
+                 measureThreads_01·p1.00:   1542.144 us/op
+
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_01":
+  N = 225649
+  mean =      8.888 ±(99.9%) 0.070 us/op
+
+  Histogram, us/op:
+    [   0.000,  125.000) = 225637 
+    [ 125.000,  250.000) = 2 
+    [ 250.000,  375.000) = 0 
+    [ 375.000,  500.000) = 0 
+    [ 500.000,  625.000) = 0 
+    [ 625.000,  750.000) = 0 
+    [ 750.000,  875.000) = 0 
+    [ 875.000, 1000.000) = 0 
+    [1000.000, 1125.000) = 0 
+    [1125.000, 1250.000) = 0 
+    [1250.000, 1375.000) = 1 
+    [1375.000, 1500.000) = 4 
+    [1500.000, 1625.000) = 5 
+    [1625.000, 1750.000) = 0 
+    [1750.000, 1875.000) = 0 
+
+  Percentiles, us/op:
+      p(0.0000) =      7.528 us/op
+     p(50.0000) =      8.592 us/op
+     p(90.0000) =      9.296 us/op
+     p(95.0000) =      9.728 us/op
+     p(99.0000) =     14.032 us/op
+     p(99.9000) =     27.147 us/op
+     p(99.9900) =     91.139 us/op
+     p(99.9990) =   1543.667 us/op
+     p(99.9999) =   1597.440 us/op
+    p(100.0000) =   1597.440 us/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 2 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_02
+
+# Run progress: 73.33% complete, ETA 00:00:50
+# Fork: 1 of 1
+# Warmup Iteration   1: 12.039 ±(99.9%) 0.556 us/op
+# Warmup Iteration   2: 9.180 ±(99.9%) 0.332 us/op
+Iteration   1: 8.902 ±(99.9%) 0.194 us/op
+                 measureThreads_02·p0.00:   7.320 us/op
+                 measureThreads_02·p0.50:   8.464 us/op
+                 measureThreads_02·p0.90:   9.248 us/op
+                 measureThreads_02·p0.95:   9.856 us/op
+                 measureThreads_02·p0.99:   14.368 us/op
+                 measureThreads_02·p0.999:  27.627 us/op
+                 measureThreads_02·p0.9999: 116.105 us/op
+                 measureThreads_02·p1.00:   2568.192 us/op
+
+Iteration   2: 8.896 ±(99.9%) 0.175 us/op
+                 measureThreads_02·p0.00:   7.304 us/op
+                 measureThreads_02·p0.50:   8.464 us/op
+                 measureThreads_02·p0.90:   9.248 us/op
+                 measureThreads_02·p0.95:   9.984 us/op
+                 measureThreads_02·p0.99:   14.352 us/op
+                 measureThreads_02·p0.999:  26.476 us/op
+                 measureThreads_02·p0.9999: 1052.460 us/op
+                 measureThreads_02·p1.00:   1953.792 us/op
+
+Iteration   3: 8.850 ±(99.9%) 0.160 us/op
+                 measureThreads_02·p0.00:   7.296 us/op
+                 measureThreads_02·p0.50:   8.480 us/op
+                 measureThreads_02·p0.90:   9.248 us/op
+                 measureThreads_02·p0.95:   9.792 us/op
+                 measureThreads_02·p0.99:   14.473 us/op
+                 measureThreads_02·p0.999:  27.410 us/op
+                 measureThreads_02·p0.9999: 65.849 us/op
+                 measureThreads_02·p1.00:   2445.312 us/op
+
+Iteration   4: 8.825 ±(99.9%) 0.161 us/op
+                 measureThreads_02·p0.00:   7.304 us/op
+                 measureThreads_02·p0.50:   8.448 us/op
+                 measureThreads_02·p0.90:   9.184 us/op
+                 measureThreads_02·p0.95:   9.680 us/op
+                 measureThreads_02·p0.99:   14.355 us/op
+                 measureThreads_02·p0.999:  27.680 us/op
+                 measureThreads_02·p0.9999: 67.777 us/op
+                 measureThreads_02·p1.00:   2017.280 us/op
+
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_02":
+  N = 454576
+  mean =      8.868 ±(99.9%) 0.087 us/op
+
+  Histogram, us/op:
+    [   0.000,  250.000) = 454540 
+    [ 250.000,  500.000) = 0 
+    [ 500.000,  750.000) = 0 
+    [ 750.000, 1000.000) = 0 
+    [1000.000, 1250.000) = 0 
+    [1250.000, 1500.000) = 0 
+    [1500.000, 1750.000) = 3 
+    [1750.000, 2000.000) = 17 
+    [2000.000, 2250.000) = 13 
+    [2250.000, 2500.000) = 2 
+    [2500.000, 2750.000) = 1 
+
+  Percentiles, us/op:
+      p(0.0000) =      7.296 us/op
+     p(50.0000) =      8.464 us/op
+     p(90.0000) =      9.232 us/op
+     p(95.0000) =      9.824 us/op
+     p(99.0000) =     14.384 us/op
+     p(99.9000) =     27.278 us/op
+     p(99.9900) =     92.483 us/op
+     p(99.9990) =   2155.982 us/op
+     p(99.9999) =   2568.192 us/op
+    p(100.0000) =   2568.192 us/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 4 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_04
+
+# Run progress: 80.00% complete, ETA 00:00:37
+# Fork: 1 of 1
+# Warmup Iteration   1: 12.660 ±(99.9%) 0.562 us/op
+# Warmup Iteration   2: 8.915 ±(99.9%) 0.173 us/op
+Iteration   1: 8.936 ±(99.9%) 0.202 us/op
+                 measureThreads_04·p0.00:   7.232 us/op
+                 measureThreads_04·p0.50:   8.368 us/op
+                 measureThreads_04·p0.90:   9.088 us/op
+                 measureThreads_04·p0.95:   9.520 us/op
+                 measureThreads_04·p0.99:   13.760 us/op
+                 measureThreads_04·p0.999:  26.376 us/op
+                 measureThreads_04·p0.9999: 2102.264 us/op
+                 measureThreads_04·p1.00:   3518.464 us/op
+
+Iteration   2: 8.906 ±(99.9%) 0.186 us/op
+                 measureThreads_04·p0.00:   7.224 us/op
+                 measureThreads_04·p0.50:   8.368 us/op
+                 measureThreads_04·p0.90:   9.072 us/op
+                 measureThreads_04·p0.95:   9.504 us/op
+                 measureThreads_04·p0.99:   13.840 us/op
+                 measureThreads_04·p0.999:  27.072 us/op
+                 measureThreads_04·p0.9999: 2183.614 us/op
+                 measureThreads_04·p1.00:   2490.368 us/op
+
+Iteration   3: 8.798 ±(99.9%) 0.169 us/op
+                 measureThreads_04·p0.00:   7.224 us/op
+                 measureThreads_04·p0.50:   8.336 us/op
+                 measureThreads_04·p0.90:   9.056 us/op
+                 measureThreads_04·p0.95:   9.504 us/op
+                 measureThreads_04·p0.99:   13.712 us/op
+                 measureThreads_04·p0.999:  24.930 us/op
+                 measureThreads_04·p0.9999: 1986.571 us/op
+                 measureThreads_04·p1.00:   3162.112 us/op
+
+Iteration   4: 8.891 ±(99.9%) 0.196 us/op
+                 measureThreads_04·p0.00:   7.200 us/op
+                 measureThreads_04·p0.50:   8.352 us/op
+                 measureThreads_04·p0.90:   9.072 us/op
+                 measureThreads_04·p0.95:   9.504 us/op
+                 measureThreads_04·p0.99:   13.792 us/op
+                 measureThreads_04·p0.999:  26.601 us/op
+                 measureThreads_04·p0.9999: 2344.475 us/op
+                 measureThreads_04·p1.00:   3289.088 us/op
+
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_04":
+  N = 916341
+  mean =      8.882 ±(99.9%) 0.094 us/op
+
+  Histogram, us/op:
+    [   0.000,  250.000) = 916220 
+    [ 250.000,  500.000) = 0 
+    [ 500.000,  750.000) = 0 
+    [ 750.000, 1000.000) = 0 
+    [1000.000, 1250.000) = 0 
+    [1250.000, 1500.000) = 0 
+    [1500.000, 1750.000) = 1 
+    [1750.000, 2000.000) = 10 
+    [2000.000, 2250.000) = 39 
+    [2250.000, 2500.000) = 46 
+    [2500.000, 2750.000) = 13 
+    [2750.000, 3000.000) = 0 
+    [3000.000, 3250.000) = 5 
+    [3250.000, 3500.000) = 6 
+    [3500.000, 3750.000) = 1 
+
+  Percentiles, us/op:
+      p(0.0000) =      7.200 us/op
+     p(50.0000) =      8.352 us/op
+     p(90.0000) =      9.072 us/op
+     p(95.0000) =      9.504 us/op
+     p(99.0000) =     13.776 us/op
+     p(99.9000) =     26.176 us/op
+     p(99.9900) =   2131.418 us/op
+     p(99.9990) =   3153.410 us/op
+     p(99.9999) =   3518.464 us/op
+    p(100.0000) =   3518.464 us/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_32
+
+# Run progress: 86.67% complete, ETA 00:00:25
+# Fork: 1 of 1
+# Warmup Iteration   1: 52.543 ±(99.9%) 1.266 us/op
+# Warmup Iteration   2: 23.404 ±(99.9%) 0.400 us/op
+Iteration   1: 24.248 ±(99.9%) 0.532 us/op
+                 measureThreads_32·p0.00:   8.160 us/op
+                 measureThreads_32·p0.50:   19.456 us/op
+                 measureThreads_32·p0.90:   23.520 us/op
+                 measureThreads_32·p0.95:   26.848 us/op
+                 measureThreads_32·p0.99:   47.070 us/op
+                 measureThreads_32·p0.999:  152.576 us/op
+                 measureThreads_32·p0.9999: 10484.102 us/op
+                 measureThreads_32·p1.00:   28901.376 us/op
+
+Iteration   2: 24.686 ±(99.9%) 0.515 us/op
+                 measureThreads_32·p0.00:   8.144 us/op
+                 measureThreads_32·p0.50:   19.520 us/op
+                 measureThreads_32·p0.90:   23.520 us/op
+                 measureThreads_32·p0.95:   26.912 us/op
+                 measureThreads_32·p0.99:   52.864 us/op
+                 measureThreads_32·p0.999:  229.308 us/op
+                 measureThreads_32·p0.9999: 10715.136 us/op
+                 measureThreads_32·p1.00:   18087.936 us/op
+
+Iteration   3: 26.673 ±(99.9%) 0.654 us/op
+                 measureThreads_32·p0.00:   8.080 us/op
+                 measureThreads_32·p0.50:   19.552 us/op
+                 measureThreads_32·p0.90:   24.096 us/op
+                 measureThreads_32·p0.95:   29.856 us/op
+                 measureThreads_32·p0.99:   116.864 us/op
+                 measureThreads_32·p0.999:  383.828 us/op
+                 measureThreads_32·p0.9999: 13598.720 us/op
+                 measureThreads_32·p1.00:   20250.624 us/op
+
+Iteration   4: 26.217 ±(99.9%) 0.662 us/op
+                 measureThreads_32·p0.00:   8.016 us/op
+                 measureThreads_32·p0.50:   19.520 us/op
+                 measureThreads_32·p0.90:   23.520 us/op
+                 measureThreads_32·p0.95:   27.520 us/op
+                 measureThreads_32·p0.99:   131.584 us/op
+                 measureThreads_32·p0.999:  318.131 us/op
+                 measureThreads_32·p0.9999: 14206.072 us/op
+                 measureThreads_32·p1.00:   18317.312 us/op
+
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_32":
+  N = 5359001
+  mean =     25.423 ±(99.9%) 0.295 us/op
+
+  Histogram, us/op:
+    [    0.000,  2500.000) = 5357170 
+    [ 2500.000,  5000.000) = 39 
+    [ 5000.000,  7500.000) = 251 
+    [ 7500.000, 10000.000) = 614 
+    [10000.000, 12500.000) = 400 
+    [12500.000, 15000.000) = 269 
+    [15000.000, 17500.000) = 198 
+    [17500.000, 20000.000) = 57 
+    [20000.000, 22500.000) = 1 
+    [22500.000, 25000.000) = 0 
+    [25000.000, 27500.000) = 1 
+
+  Percentiles, us/op:
+      p(0.0000) =      8.016 us/op
+     p(50.0000) =     19.520 us/op
+     p(90.0000) =     23.648 us/op
+     p(95.0000) =     27.680 us/op
+     p(99.0000) =     60.736 us/op
+     p(99.9000) =    299.008 us/op
+     p(99.9900) =  12453.475 us/op
+     p(99.9990) =  17642.618 us/op
+     p(99.9999) =  19309.592 us/op
+    p(100.0000) =  28901.376 us/op
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.5, Java HotSpot(TM) 64-Bit Server VM, 11.0.5+10-LTS
+# VM invoker: /usr/lib/jvm/jdk-11.0.5/bin/java
+# VM options: <none>
+# Warmup: 2 iterations, 2 s each
+# Measurement: 4 iterations, 2 s each
+# Timeout: 10 min per iteration
+# Threads: 32 threads, will synchronize iterations
+# Benchmark mode: Sampling time
+# Benchmark: com.maxmind.db.BenchmarksNonSync.measureThreads_64
+
+# Run progress: 93.33% complete, ETA 00:00:12
+# Fork: 1 of 1
+# Warmup Iteration   1: 65.982 ±(99.9%) 1.737 us/op
+# Warmup Iteration   2: 27.941 ±(99.9%) 0.698 us/op
+Iteration   1: 28.551 ±(99.9%) 0.753 us/op
+                 measureThreads_64·p0.00:   7.688 us/op
+                 measureThreads_64·p0.50:   18.848 us/op
+                 measureThreads_64·p0.90:   22.976 us/op
+                 measureThreads_64·p0.95:   28.480 us/op
+                 measureThreads_64·p0.99:   203.776 us/op
+                 measureThreads_64·p0.999:  745.610 us/op
+                 measureThreads_64·p0.9999: 16663.192 us/op
+                 measureThreads_64·p1.00:   22577.152 us/op
+
+Iteration   2: 25.040 ±(99.9%) 0.623 us/op
+                 measureThreads_64·p0.00:   7.696 us/op
+                 measureThreads_64·p0.50:   18.880 us/op
+                 measureThreads_64·p0.90:   22.784 us/op
+                 measureThreads_64·p0.95:   26.080 us/op
+                 measureThreads_64·p0.99:   54.656 us/op
+                 measureThreads_64·p0.999:  277.875 us/op
+                 measureThreads_64·p0.9999: 14467.072 us/op
+                 measureThreads_64·p1.00:   19464.192 us/op
+
+Iteration   3: 22.653 ±(99.9%) 0.452 us/op
+                 measureThreads_64·p0.00:   7.704 us/op
+                 measureThreads_64·p0.50:   18.816 us/op
+                 measureThreads_64·p0.90:   22.432 us/op
+                 measureThreads_64·p0.95:   25.216 us/op
+                 measureThreads_64·p0.99:   44.800 us/op
+                 measureThreads_64·p0.999:  156.160 us/op
+                 measureThreads_64·p0.9999: 10642.833 us/op
+                 measureThreads_64·p1.00:   20742.144 us/op
+
+Iteration   4: 23.018 ±(99.9%) 0.457 us/op
+                 measureThreads_64·p0.00:   7.672 us/op
+                 measureThreads_64·p0.50:   18.784 us/op
+                 measureThreads_64·p0.90:   22.336 us/op
+                 measureThreads_64·p0.95:   25.440 us/op
+                 measureThreads_64·p0.99:   47.744 us/op
+                 measureThreads_64·p0.999:  181.556 us/op
+                 measureThreads_64·p0.9999: 10294.403 us/op
+                 measureThreads_64·p1.00:   17170.432 us/op
+
+
+
+Result "com.maxmind.db.BenchmarksNonSync.measureThreads_64":
+  N = 5560996
+  mean =     24.667 ±(99.9%) 0.285 us/op
+
+  Histogram, us/op:
+    [    0.000,  2500.000) = 5559360 
+    [ 2500.000,  5000.000) = 117 
+    [ 5000.000,  7500.000) = 155 
+    [ 7500.000, 10000.000) = 414 
+    [10000.000, 12500.000) = 432 
+    [12500.000, 15000.000) = 191 
+    [15000.000, 17500.000) = 214 
+    [17500.000, 20000.000) = 84 
+    [20000.000, 22500.000) = 28 
+    [22500.000, 25000.000) = 1 
+    [25000.000, 27500.000) = 0 
+
+  Percentiles, us/op:
+      p(0.0000) =      7.672 us/op
+     p(50.0000) =     18.816 us/op
+     p(90.0000) =     22.592 us/op
+     p(95.0000) =     26.080 us/op
+     p(99.0000) =     61.632 us/op
+     p(99.9000) =    420.864 us/op
+     p(99.9900) =  11942.303 us/op
+     p(99.9990) =  18874.368 us/op
+     p(99.9999) =  21735.572 us/op
+    p(100.0000) =  22577.152 us/op
+
+
+# Run complete. Total time: 00:03:09
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                                                        Mode      Cnt      Score   Error   Units
+BenchmarksNonSync.measureThreads_01                             thrpt        4      0.112 ± 0.006  ops/us
+BenchmarksNonSync.measureThreads_02                             thrpt        4      0.227 ± 0.010  ops/us
+BenchmarksNonSync.measureThreads_04                             thrpt        4      0.453 ± 0.004  ops/us
+BenchmarksNonSync.measureThreads_32                             thrpt        4      1.460 ± 0.010  ops/us
+BenchmarksNonSync.measureThreads_64                             thrpt        4      1.426 ± 0.122  ops/us
+BenchmarksNonSync.measureThreads_01                              avgt        4      8.811 ± 0.387   us/op
+BenchmarksNonSync.measureThreads_02                              avgt        4      8.706 ± 0.186   us/op
+BenchmarksNonSync.measureThreads_04                              avgt        4      8.677 ± 0.140   us/op
+BenchmarksNonSync.measureThreads_32                              avgt        4     23.113 ± 1.194   us/op
+BenchmarksNonSync.measureThreads_64                              avgt        4     22.312 ± 1.257   us/op
+BenchmarksNonSync.measureThreads_01                            sample   225649      8.888 ± 0.070   us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.00    sample               7.528           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.50    sample               8.592           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.90    sample               9.296           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.95    sample               9.728           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.99    sample              14.032           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.999   sample              27.147           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p0.9999  sample              91.139           us/op
+BenchmarksNonSync.measureThreads_01:measureThreads_01·p1.00    sample            1597.440           us/op
+BenchmarksNonSync.measureThreads_02                            sample   454576      8.868 ± 0.087   us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.00    sample               7.296           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.50    sample               8.464           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.90    sample               9.232           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.95    sample               9.824           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.99    sample              14.384           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.999   sample              27.278           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p0.9999  sample              92.483           us/op
+BenchmarksNonSync.measureThreads_02:measureThreads_02·p1.00    sample            2568.192           us/op
+BenchmarksNonSync.measureThreads_04                            sample   916341      8.882 ± 0.094   us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.00    sample               7.200           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.50    sample               8.352           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.90    sample               9.072           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.95    sample               9.504           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.99    sample              13.776           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.999   sample              26.176           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p0.9999  sample            2131.418           us/op
+BenchmarksNonSync.measureThreads_04:measureThreads_04·p1.00    sample            3518.464           us/op
+BenchmarksNonSync.measureThreads_32                            sample  5359001     25.423 ± 0.295   us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.00    sample               8.016           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.50    sample              19.520           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.90    sample              23.648           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.95    sample              27.680           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.99    sample              60.736           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.999   sample             299.008           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p0.9999  sample           12453.475           us/op
+BenchmarksNonSync.measureThreads_32:measureThreads_32·p1.00    sample           28901.376           us/op
+BenchmarksNonSync.measureThreads_64                            sample  5560996     24.667 ± 0.285   us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.00    sample               7.672           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.50    sample              18.816           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.90    sample              22.592           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.95    sample              26.080           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.99    sample              61.632           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.999   sample             420.864           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p0.9999  sample           11942.303           us/op
+BenchmarksNonSync.measureThreads_64:measureThreads_64·p1.00    sample           22577.152           us/op

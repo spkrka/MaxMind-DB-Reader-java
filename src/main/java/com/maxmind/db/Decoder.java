@@ -56,14 +56,10 @@ final class Decoder {
             return Type.values[i];
         }
 
-        private static Type get(byte b) throws InvalidDatabaseException {
-            // bytes are signed, but we want to treat them as unsigned here
-            return Type.get(b & 0xFF);
-        }
-
         static Type fromControlByte(int b) throws InvalidDatabaseException {
             // The type is encoded in the first 3 bits of the byte.
-            return Type.get((byte) ((0xFF & b) >>> 5));
+            // bytes are signed, but we want to treat them as unsigned here
+            return Type.get(((0xFF & b) >>> 5) & 0xFF);
         }
     }
 
@@ -96,7 +92,7 @@ final class Decoder {
         // it.
         if (type.equals(Type.POINTER)) {
             int pointerSize = ((ctrlByte >>> 3) & 0x3) + 1;
-            int base = pointerSize == 4 ? (byte) 0 : (byte) (ctrlByte & 0x7);
+            int base = pointerSize == 4 ? 0 : ctrlByte & 0x7;
             int packed = this.decodeInteger(base, pointerSize);
             long pointer = packed + this.pointerBase + POINTER_VALUE_OFFSETS[pointerSize];
 
